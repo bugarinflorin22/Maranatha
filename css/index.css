@@ -1,0 +1,180 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background: #ecf2f9;
+}
+
+.title {
+    text-align: center;
+    margin-top: 4rem;
+    color: rgb(139, 137, 137);
+    position: relative;
+    bottom: 100px;
+    opacity: 0;
+}
+
+.title-hr, .after-title-hr {
+    width: 15rem;
+    margin: 1rem auto 2rem auto;
+    background: grey;
+}
+
+.front-img {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.imagine img{
+    height: 30rem;
+    width: 35rem;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.descriere {
+    width: 40%;
+    padding: 2rem;
+}
+
+#descriere {
+    position: relative;
+    z-index: -1;
+}
+
+.descriere p {
+    color: rgb(139, 137, 137);
+}
+
+.img-title {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.after-title-hr {
+    margin-top: 4rem;
+}
+
+.selectie {
+    padding: 2rem;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+
+.box {
+    border-radius: 30px;
+    width: 20rem;
+    height: 28rem;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    margin: 0.5rem;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.box img {
+    height: 25rem;
+    width: 20rem;
+    object-fit: cover;
+}
+
+.box .box-hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));
+    height: 25rem;
+    width: 20rem;
+    position: absolute;
+}
+
+.box-hover i {
+    position: relative;
+    top: 50%;
+    color: white;
+    font-size: 2rem;
+}
+
+.box p {
+    text-align: center;
+    font-size: 18px;
+    padding: 0.5rem;
+}
+
+.box-hover {
+    background-color: black;
+}
+
+
+@media only screen and (max-width: 1250px) {
+
+  .imagine img {
+      height: 20rem;
+      width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+    .title {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .imagine img {
+      height: 15rem;
+      width: 20rem;
+  }
+
+  .front-img {
+      text-align: center;
+      display: block;
+      width: 90%;
+  }
+
+  .descriere {
+    width: 100%;
+    padding: 0.5rem;
+    overflow: hidden;
+    }
+
+    .after-title-hr {
+        margin-top: 2rem;
+    }
+
+    .img-title {
+        font-size: 1rem;
+    }
+
+    .descriere p {
+        font-size: 1rem;
+    }
+
+    .box {
+        height: 19rem;
+        width: 15rem;
+    }
+
+    .box img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .box p {
+        font-size: 0.8rem;
+    }
+
+    .box .box-hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+}
+}

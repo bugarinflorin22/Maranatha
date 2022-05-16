@@ -1,0 +1,64 @@
+.produs_particular {
+    display: flex;
+    text-align: center;
+    height: auto;
+    justify-content: center;
+}
+
+
+.produs_particular_box_img img{
+    height: 30rem;
+    width: 35rem;
+    object-fit: cover;
+}
+
+.produs_particular_box_descriere{
+    width: 40%;
+    margin-left: 2rem;
+}
+
+.box_descriere_title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.box_descriere_totala {
+    height: 4.8rem;
+    overflow: none;
+}
+
+.box_separare {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 22px;
+}
+.box_cantitate input{
+    border: none;
+    width: 3rem;
+    padding: 0.2rem;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.box_cantitate input:focus{
+    outline: none;
+}
+
+.box_button {
+    margin-top: 2rem;
+    background-color: teal;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.aling {
+    text-align: left;
+}
+
+@media screen and (max-width: 1210px) {
+        .box_descriere_totala {
+        overflow: scroll;
+    }
+}

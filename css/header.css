@@ -1,0 +1,160 @@
+header {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.emb {
+    height: 10rem;
+    padding: 2rem 0rem 2rem 10rem;
+    pointer-events: none;
+}
+
+.links {
+    text-align: right;
+    width: 100%;
+}
+
+.mobile-links {
+    text-align: right;
+    background-color: lightcoral;
+    color: white;
+    height: 2.5rem;
+    width: 100%;
+    
+}
+
+.mobile-links i{
+    margin-top: 0.8rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+}
+
+.extra-header p{
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-right: 2rem;
+    font-size: 1rem;
+}  
+.extra-header i {
+    margin-left: 1rem;
+    margin-right: 0.3rem;
+}
+
+.cos-dropdown {
+    background: #c57175;
+    position: absolute;
+    right: 1rem;
+    color: white;
+    width: auto;
+    padding: 2rem;
+    top: -200px;
+    opacity: 0;
+}
+
+.cos-dropdown .component, .componentfinal {
+    display: flex;
+    justify-content: center;
+}
+
+
+.cos-dropdown img {
+    height: 50px;
+    border-radius: 30px;
+    width: 50px;
+    object-fit: cover;
+    box-shadow: white 0px 0px 5px 1px;
+}
+
+.cos-dropdown p {
+    margin-top: 15px;
+    margin-left: 1rem;
+    cursor: default;
+}
+
+.cos-dropdown .plateste {
+    background: white;
+    color: #c57175;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cos-dropdown hr {
+    color: white;
+    width: 40%;
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+.exit_dropdown {
+    text-align: center;
+    margin: 1rem 0rem 0rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exit_dropdown i {
+    cursor: pointer;
+}
+
+ul {
+    background: linear-gradient(90deg, #cf797e00,#fa9197);
+    padding: 2rem;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    color: #ecf2f9;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.mobile-drop-down {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    bottom: 0;
+    width: 65%;
+    background: #fa9197;
+    z-index: 5;
+    text-align: center;
+    display: none;
+}
+
+.mobile-drop-down ul {
+    background: none;
+}
+
+.mobile-drop-down li {
+    display: block;
+}
+
+.mobile-drop-down li a {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+}
+
+@media only screen and (min-width: 970px) {
+    .mobile-links {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .links {
+        display: none;
+    }
+    .emb {
+        padding: 0.5rem;
+        height: 5rem;
+    }
+}

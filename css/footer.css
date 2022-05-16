@@ -1,0 +1,16 @@
+footer p {
+    text-align: center;
+    padding: 1rem;
+}
+
+.info {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+}
+@media only screen and (min-width: 970px) {
+    .info {
+        display: none;
+    }
+}

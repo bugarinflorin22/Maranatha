@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background: #ecf2f9;
+}
+
+.title {
+    text-align: center;
+    margin-top: 4rem;
+    color: rgb(139, 137, 137);
+    position: relative;
+    bottom: 100px;
+    opacity: 0;
+}
+
+.title-hr, .after-title-hr {
+    width: 15rem;
+    margin: 1rem auto 2rem auto;
+    background: grey;
+}
+
+.filter {
+    margin-bottom: 2rem;
+}
+
+
+.in-filter {
+    display: flex;
+    justify-content: center;
+    background: #fa9197;
+    padding: 0.5rem;
+    color: white;
+    align-items: baseline;
+}
+
+.in-filter p {
+    margin-right: 1rem;
+}
+
+.in-filter select {
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem;
+    color: #d4797d;
+    outline: none;
+    margin: 10px;
+}
+
+.in-filter select:focus {
+    outline: none;
+}
+
+
+.torturi, .prajituri, .macarons, .cup_cakes, .acadele, .cakes, .biscuiti, .cozonac, .figurine, .saratele {
+    text-align: center;
+}
+
+.boxes {
+    display: inline-block;
+}
+
+.in-boxes {
+    width: 25rem;
+    height: 23rem;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
+    cursor: pointer;
+}
+
+.in-boxes img {
+    height: 15rem;
+    width: 25rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.img_anim {
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+.img_anim_reverse {
+    transform: scale(1);
+    transition: 1s; 
+}
+
+
+.in-boxes-img {
+    overflow: hidden;
+    height: 15rem;
+    width: 25rem;
+}
+
+.in-boxes p {
+    text-align: center;
+    font-size: 18px;
+    padding: 1rem;
+    cursor: default;
+}
+

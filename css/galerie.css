@@ -1,0 +1,167 @@
+.galerie {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.galerie-title {
+    padding: 1rem;
+    background-color: lightcoral;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.thetitle {
+    flex: 1;
+}
+
+.galerie-title i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+}
+
+.drop-down-galerie {
+    background-color: rgb(252, 146, 146);
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    overflow: hidden;
+    display: none;
+}
+
+.drop-down-galerie p{
+    margin: 1.5rem auto;
+    cursor: pointer;
+}
+
+.drop-down-galerie p:hover{
+    text-decoration: overline;
+}
+
+.galerie-content {
+    background-color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.galerie-content img {
+    height: 17rem;
+    width: 18rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    object-fit: cover;
+}
+.zoomimg {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    width: auto;
+    left: 0;
+    display: none;
+}
+
+.zoomimgs {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 200%;
+    overflow: hidden;
+    left: -50%;
+}
+
+.zimg {
+    height: 45rem;
+    width: 70%;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+.zimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.zoomimg i {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+.zoomcontrols {
+    text-align: center;
+    margin-top: 2rem;
+}
+.zoomcontrols i{
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+@media only screen and (max-width: 1444px) {
+
+    .galerie {
+        width: 90%;
+    }
+    .galerie-content img { 
+        height: 8rem;
+        width: 9rem;
+    }
+
+    .zoomcontrols .fas{
+        display: none;
+    }
+    .zoomimgs {
+    width: 300%;
+    left: -100%;
+}
+   
+}
+
+@media only screen and (max-width: 800px) {
+
+.zimg {
+    height: 25rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+.zoomimgs {
+    width: 300%;
+    left: -100%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+.zimg {
+    height: 20rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+.zoomimgs {
+    width: 300%;
+    left: -100%;
+}
+
+}
+
+@media only screen and (max-width: 300px) {
+
+.zimg {
+    height: 10rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.zoomimgs {
+    width: 300%;
+    left: -100%;
+}
+}
+
